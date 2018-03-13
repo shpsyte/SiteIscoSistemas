@@ -60,7 +60,7 @@ header.masthead h1 {
 
 .navbar.scrolled {
   background: rgb(68, 68, 68); /* IE */
-  background: rgba(204, 222, 224, 0.78); /* NON-IE */
+  background: #ffffff; /* NON-IE */
 }
 .features-bots {
   padding-top: 7rem;
