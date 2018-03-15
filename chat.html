@@ -14,9 +14,17 @@
 
 <body>
          
+
  <div id="bot"/>
 <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
 <script>
+
+     
+
+
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      document.querySelector(".wc-header span").innerHTML = "<b>Agente Virtual da Isco</b> ";
+});
      const botConnection = new BotChat.DirectLine({
        // domain: params['domain'],
         secret: "_sCtJ_yiHjQ.cwA.nyc.OM1xde4Obm9oI1RonXvMblBAhJEgUrLftpLNhSxONWs",

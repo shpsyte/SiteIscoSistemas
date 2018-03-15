@@ -18,17 +18,20 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   .wc-app audio, .wc-app video {
     display: block; }
   
+     
   /* docking */
   .wc-hidden {
     visibility: hidden; }
-  
+   
   .wc-header {
     background-color: #0078d7;
+    background: url('../img/bot1.png')  no-repeat center center ;
+    
     box-shadow: 0 1px rgba(0, 0, 0, 0.2);
     box-sizing: content-box;
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
-    height: 30px;
+    height: 100px;
     left: 0;
     letter-spacing: 0.5px;
     padding: 8px 8px 0 8px;
@@ -51,8 +54,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     padding: 10px;
     position: absolute;
     right: 0;
-    top: 38px;
-    transition: transform 0.2s cubic-bezier(0, 0, 0.5, 1); 
+    top: 108px;
+     
     background: url('../img/fundo.png')  no-repeat center center;
     -webkit-background-size: cover;
   -moz-background-size: cover;
