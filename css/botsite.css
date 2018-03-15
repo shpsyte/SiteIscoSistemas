@@ -23,15 +23,34 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   .wc-hidden {
     visibility: hidden; }
    
+.wc-header span{
+   background: url('../img/botmini.png')  no-repeat left   ;
+   padding-left: 40px;
+   padding-top: 5px;
+
+   content : "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 1;
+   
+   width: 100%;
+   height: 100%;
+  
+   z-index: -1;
+   
+}
+ 
+
   .wc-header {
-    background-color: #0078d7;
-    background: url('../img/bot1.png')  no-repeat center center ;
+     background-color: #e6e6e6; 
+    /* background: url('../img/bot1.png')  no-repeat center center ; */
     
     box-shadow: 0 1px rgba(0, 0, 0, 0.2);
     box-sizing: content-box;
     color: #000000;
     font-weight: 500;
-    height: 100px;
+    height: 30px;
     left: 0;
     letter-spacing: 0.5px;
     padding: 8px 8px 0 8px;
@@ -54,7 +73,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     padding: 10px;
     position: absolute;
     right: 0;
-    top: 108px;
+    top: 38px;
      
     background: url('../img/fundo.png')  no-repeat center center;
     -webkit-background-size: cover;
@@ -413,7 +432,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   
   /* console */
   .wc-console {
-    border: 5px solid #dbdee1;
+    border-top: 1px solid #0d0d0e;
     bottom: 0;
     box-sizing: border-box;
     height: 50px;
@@ -427,6 +446,11 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
       position: absolute;
       top: 0;
       vertical-align: middle; }
+
+     .wc-upload{
+       visibility: hidden;
+        
+     }
     .wc-console label, .wc-console button {
       cursor: pointer;
       display: inline-block;

@@ -8,51 +8,54 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
- <link href="css/botsite.css" rel="stylesheet">
-  
+  <link href="css/botsite.css" rel="stylesheet">
+
 </head>
 
 <body>
-         
-
- <div id="bot"/>
-<script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
-<script>
-
-     
 
 
-    document.addEventListener("DOMContentLoaded", function(event) { 
-      document.querySelector(".wc-header span").innerHTML = "<b>Agente Virtual</b> ";
-});
-     const botConnection = new BotChat.DirectLine({
-       // domain: params['domain'],
-        secret: "_sCtJ_yiHjQ.cwA.nyc.OM1xde4Obm9oI1RonXvMblBAhJEgUrLftpLNhSxONWs",
-        webSocket: true
+  <div id="bot" />
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+  <script>
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+      document.querySelector(".wc-header span").innerHTML = "Agente Virtual ";
+      document.querySelector(".wc-shellinput").placeholder = "Ex. Como eu faço para comprar o sistema, ou preciso de suporte....";
+      
+      wc-shellinput
+    });
+    const botConnection = new BotChat.DirectLine({
+      // domain: params['domain'],
+      secret: "_sCtJ_yiHjQ.cwA.nyc.OM1xde4Obm9oI1RonXvMblBAhJEgUrLftpLNhSxONWs",
+      webSocket: true
+    });
+
+    botConnection.activity$
+      .filter(function (activity) {
+        return activity.type === 'event' && activity.name === 'changeBackground';
+      })
+      .subscribe(function (activity) {
+        console.log('"changeBackground" received with value: ' + activity.value);
+        changeBackgroundColor(activity.value);
       });
 
- botConnection.activity$
-        .filter(function (activity) {
-          return activity.type === 'event' && activity.name === 'changeBackground';
-        })
-        .subscribe(function (activity) {
-          console.log('"changeBackground" received with value: ' + activity.value);
-          changeBackgroundColor(activity.value);
-        });
+    function changeBackgroundColor(newColor) {
+      document.body.style.backgroundColor = newColor;
+    }
 
-      function changeBackgroundColor(newColor) {
-        document.body.style.backgroundColor = newColor;
-      }
+    BotChat.App({
 
-  BotChat.App({
-    
-    botConnection: botConnection,
-    user: { id: 'userid' },
-    bot: { id: 'botid' },
-    resize: 'detect',
-    sendTyping: true,
-  }, document.getElementById("bot"));
-   
+      botConnection: botConnection,
+      user: { id: 'userid' },
+      bot: { id: 'botid' },
+      resize: 'detect',
+      sendTyping: true,
+    }, document.getElementById("bot"));
+
 //   botConnection
 //     .postActivity({
 //     from: { id: 'me' },
@@ -64,7 +67,7 @@
 //     //console.log('"buttonClicked" sent');
 //     });
 
-</script>
+  </script>
 </body>
 
 </html>
