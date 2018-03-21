@@ -6,7 +6,7 @@ function Opneva() {
     t = window.innerHeight - height;
     l = window.innerWidth - width - 10;
 
-    window.open('https://bots4app.azurewebsites.net/chat.html?appid=0012ss22sfs23333&avatar=avatarBot.png&botname=Ian - Agente Virtual&placeholder=Ex. Me fale sobre o sistema ou preciso de Suporte&userid=Cliente&s=_sCtJ_yiHjQ.cwA.nyc.OM1xde4Obm9oI1RonXvMblBAhJEgUrLftpLNhSxONWs&css=botconfig ', '', 'height=' + height + ', width=' + width + ', left=' + l + ', top=' + t);
+    window.open('https://bots4app.azurewebsites.net/chat.html?appid=0012ss22sfs23333&avatar=avatarBot.png&botname=Ian - Agente Virtual&placeholder=Ex. Preciso de um sistema, Suporte Técnico&userid=Cliente&s=_sCtJ_yiHjQ.cwA.nyc.OM1xde4Obm9oI1RonXvMblBAhJEgUrLftpLNhSxONWs&css=botconfig ', '', 'height=' + height + ', width=' + width + ', left=' + l + ', top=' + t);
 }
 
 
