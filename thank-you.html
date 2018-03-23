@@ -4,17 +4,19 @@
 <head>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/landing-page.min.css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Smart é um sistema de emissão de notas fiscais eletrônicas, Nf-e e Nfc-e!" />
     <meta name="author" content="Isco Sistemas">
     <meta name="keywords" content="sistema para nota fisacl eletrônica, nf-e, nfc-e">
-    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="cache-control" content="public, max-age=3600" />
+    <!-- reconhecida pelo HTTP 1.1 -->
+    <meta http-equiv="Pragma" content="public, max-age=3600">
+    <!-- reconhecida por todas as versões do HTTP -->
+
     <meta http-equiv="content-language" content="pt-br" />
     <meta http-equiv="content-type" content="text/html" />
     <meta name="copyright" content="© 2018 Isco Sistemas" />
@@ -26,7 +28,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109130604-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-109130604-1');
     </script>
@@ -41,7 +46,6 @@
         </a>
     </section>
 
-
     <!-- Masthead -->
     <header class="thy text-white">
         <div class="overlay"></div>
@@ -54,54 +58,45 @@
                 </div>
 
                 <div class="col-12">
-                    <p class="h4 font-weight-light text">O SmartUp é um software on-line  para emissão de NF-e/Nfc-e.</p>
+                    <p class="h4 font-weight-light text">O SmartUp é um software on-line para emissão de NF-e/Nfc-e.</p>
 
                 </div>
-               
+
                 <div class="col-12 mt-4">
-                        <a href="/" class="btn btn-lg btn-warning">
-                                Voltar a página inicial
-                        </a>
-                    </div>
+                    <a href="/" class="btn btn-lg btn-warning">
+                        Voltar a página inicial
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-
-  <!-- Footer -->
-  <footer class="footer bg-dark">
+    <!-- Footer -->
+    <footer class="footer bg-dark">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
-              <p class="font-weight-light mb-4 mb-lg-0">&copy; http://iscosistemas.com</p>
+            <div class="row">
+                <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">&copy; http://iscosistemas.com</p>
+                </div>
+
+                <div class="col-lg-4 text-white ">
+                    <p class="h4 font-weight-light text-white">41. 3156-4726</p>
+                </div>
+
             </div>
-    
-            <div class="col-lg-4 text-white ">
-                <p class="h4 font-weight-light text-white">41. 3156-4726</p>
-              </div>
-    
-          </div>
-    
-          <div class="row">
-              <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
-                <p class="font-weight-light mb-4 mb-lg-0">suporte@iscosistemas.com</p>
-              </div>
-              <div class="col-lg-4 text-white">
-                  <button onclick="Opneva('suporte')" class="btn btn-outline-light">
-                      <img class="img-fluid rounded-circle" src="img/botmini.png"> &nbsp Atendimento Virtual </button>
+
+            <div class="row">
+                <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">suporte@iscosistemas.com</p>
+                </div>
+                <div class="col-lg-4 text-white">
+                    <button onclick="Opneva('suporte')" class="btn btn-outline-light">
+                        <img class="img-fluid rounded-circle" src="img/botmini.png"> &nbsp Atendimento Virtual </button>
                 </div>
             </div>
         </div>
-      </footer>
-
-
-
+    </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/mais.min.js"></script>
-
-
 </body>
-
 </html>
