@@ -3,10 +3,28 @@ CACHE MANIFEST
 
 # Explicitly cached 'master entries'.
 CACHE:
-*
+index.html
+css/landing-page.min.css
+img/banner.png
+img/bot1.png
+img/botmini.png
+img/cost.png
+img/logo.png 
+img/sales.png
+js/mais.min.js
+vendor/bootstrap/css/bootstrap.min.css
+vendor/bootstrap/js/bootstrap.bundle.min.js 
+vendor/font-awesome/css/font-awesome.min.css 
+vendor/jquery/jquery.min.js 
+vendor/simple-line-icons/css/simple-line-icons.css
+
+
 
 # Resources that require the user to be online.
 NETWORK:
 *
 
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
 FALLBACK:
