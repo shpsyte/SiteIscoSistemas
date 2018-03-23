@@ -26,3 +26,19 @@ if ($('.navbar').length > 0) {
         checkScroll();
     });
 }
+
+
+$("#subirTopo").hide();
+
+$('a#subirTopo').click(function () {
+  Opneva('suporte');
+});
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 400) {
+        $('#subirTopo').fadeIn();
+    } else {
+        $('#subirTopo').fadeOut();
+    }
+ 
+});

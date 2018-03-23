@@ -16,7 +16,7 @@ h6 {
 header.masthead {
   position: relative;
   
-  background: url("../img/bg-consumer.png") no-repeat center center; 
+  background: url("../img/banner.png") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,19 +25,44 @@ header.masthead {
    
 }
 
-header.masthead .overlay {
+.thy{
+  position: relative;
+  background: url("../img/thakyoubg.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.thy .overlay{
   position: absolute;
-  background-color: rgb(27, 13, 230);
+  background-color :#003476;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-    opacity: 0.1; 
+    opacity: 0.4; 
+}
+
+header.masthead   .overlay {
+  position: absolute;
+  background-color :#003476;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+    opacity: 0.3; 
 }
 
 header.masthead h1 {
   font-size: 2rem;
 }
+header.thy h1 {
+  font-size: 2rem;
+}
+
+
 
 @media (min-width: 768px) {
   header.masthead {
@@ -49,6 +74,41 @@ header.masthead h1 {
   }
 }
 
+
+#subirTopo {
+  text-decoration: none;
+  background: rgba(30,156,161,.9);
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+
+  position: fixed;
+  border: 0;
+  font-family: sans-serif;
+  opacity: .8;
+  }
+  
+  #subirTopo:hover {
+  opacity:1;
+  }
+
+  
+@media (min-width: 768px) {
+  header.thy {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  header.thy h1 {
+    font-size: 3rem;
+  }
+}
 /* Add the below transitions to allow a smooth color change similar to lyft */
 .navbar {
   -webkit-transition: all 0.6s ease-out;
@@ -67,9 +127,14 @@ header.masthead h1 {
   padding-bottom: 7rem;
 }
 
-.features-quote{
+.hederthy
+{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.features-quote{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
 
 }
@@ -174,7 +239,6 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   /* background-color: #343a40; */
-  /* background: url("../img/bg-masthead.jpg") no-repeat center center; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -196,4 +260,12 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+
+
+#header-and-form #responsive-form {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
 }
