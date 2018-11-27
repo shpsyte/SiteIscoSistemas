@@ -1,72 +1,149 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Smart é um sistema de emissão de notas fiscais eletrônicas, Nf-e e Nfc-e!" />
+    <meta name="author" content="Isco Sistemas">
+    <meta name="keywords" content="sistema para nota fiscal eletrônica, nf-e, nfc-e">
+    <meta http-equiv="cache-control" content="max-age=3600" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta http-equiv="pragma" content="public" />
+    <meta http-equiv="pragma" content="max-age=3600" />
+    <meta name="cache-control" content="max-age=3600" />
+    <meta name="cache-control" content="public" />
+    <meta name="pragma" content="public" />
+    <meta name="pragma" content="max-age=3600" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="copyright" content="© 2018 Isco Sistemas" />
+    <meta name="robots" content="noodp">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.min.css">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <link href="css/botsite.css" rel="stylesheet">
 
+
+    <title>Sistema para Emissão de Nota Fiscal Eletrônica (Nf-e / Nfc-e)</title>
+    <script>
+        if (navigator.userAgent.indexOf("Speed Insights") == -1) {
+            var script = document.createElement('script');
+            script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-109130604-1');
+            script.setAttribute('type', 'text/javascript');
+            document.getElementsByTagName('head')[0].appendChild(script);
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-109130604-1');
+        }
+    </script>
 </head>
 
 <body>
-
-
-  <div id="bot" />
-  <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
-  <script>
-
-
-    document.addEventListener("DOMContentLoaded", function (event) {
-      document.querySelector(".wc-header span").innerHTML = "Agente Virtual ";
-      document.querySelector(".wc-shellinput").placeholder = "Ex. Como comprar, ou Preciso de suporte...";
-    });
-
-
-
-    const botConnection = new BotChat.DirectLine({
-      // domain: params['domain'],
-      secret: "_sCtJ_yiHjQ.cwA.nyc.OM1xde4Obm9oI1RonXvMblBAhJEgUrLftpLNhSxONWs",
-      webSocket: true
-    });
-
-    botConnection.activity$
-      .filter(function (activity) {
-        return activity.type === 'event' && activity.name === 'changeBackground';
-      })
-      .subscribe(function (activity) {
-        console.log('"changeBackground" received with value: ' + activity.value);
-        changeBackgroundColor(activity.value);
-      });
-
-    function changeBackgroundColor(newColor) {
-      document.body.style.backgroundColor = newColor;
-    }
-
-    BotChat.App({
-
-      botConnection: botConnection,
-      user: { id: 'userid' },
-      bot: { id: 'botid' },
-      resize: 'detect',
-      sendTyping: true,
-    }, document.getElementById("bot"));
-
-//   botConnection
-//     .postActivity({
-//     from: { id: 'me' },
-//     name: 'buttonClicked',
-//     type: 'event',
-//     value: ''
-//     })
-//     .subscribe(function (id) {
-//     //console.log('"buttonClicked" sent');
-//     });
-
-  </script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="/"> <img class="img-fluid" src="img/logo.png" alt="Logo - Isco Sistemas" title="Logo da Isco Sistemas"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <p class="nav-link h4 font-weight-light text-dark"> </p>
+                    </li>
+                </ul> <span class="navbar-text h4 font-weisght-light text-dark "> </span> </div>
+        </nav>
+    </div>
+    
+    <section class="features-quote text-center text-info">
+        <div class="container">
+            <p class="h2 font-weight-light">Converse conosco</p>
+            <p class="h2 font-weight-light">Escolha a melhor opção para você</p>
+        </div>
+    </section>
+    <section class="text-center text-info ">
+        <div class="container">
+            <div class="row text-dark">
+                <div class="col-md-4 my-3">
+                    <div class="card bg-light shadown ">
+                        <div class="card-header">
+                            <p class="h4 text-info font-weight-light"> <b>Chat OnLine</b></p>
+                        </div>
+                        <div class="card-body bg-light ">
+                            <p class="card-text text-justify lead"> 
+                            <a class="text-success" href="#" onclick="javascript:$zoho.salesiq.visitor.question('Suporte');$zoho.salesiq.chat.start();">
+                            <i class="far fa-comments fa-2x"></i>
+                            Chat OnLine
+                             </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-light shadown ">
+                        <div class="card-header">
+                            <p class="h4 text-info font-weight-light"> <b>WhatsApp</b>!</p>
+                        </div>
+                        <div class="card-body bg-light ">
+                            <p class="card-text text-justify lead">
+                               <a class="text-success" style="font-size:24px;" href="https://web.whatsapp.com/send?phone=5541999325815&text=Olá Isco.." target="_blank">
+                               <i class="fab fa-whatsapp fa-2x"></i>
+                               WhatsApp
+                               
+                               </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-light shadown">
+                        <div class="card-header">
+                            <p class="h4 text-info font-weight-light"><b>E-mail</b>
+                            </p>
+                        </div>
+                        <div class="card-body bg-light ">
+                            <p class="card-text text-justify lead"> 
+                            <a class="text-success" style="font-size:24px;" href="mailto:suporte@iscosistemas.com" target="_blank">
+                               <i class="far fa-envelope-open fa-2x"></i>
+                               Email
+                               
+                               </a>
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+     
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">&copy; http://iscosistemas.com</p>
+                </div>
+                <div class="col-lg-4 text-white ">
+                    <p class="h4 font-weight-light text-white"> </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">suporte@iscosistemas.com</p>
+                </div>
+                <div class="col-lg-4 text-white ">
+                    <p class="h4 font-weight-light text-white"><a target="_blank" href="https://get.teamviewer.com/iscosistemas">Clique para baixar o Teamview</a></p>
+                </div>
+                <!-- <div class="col-lg-4 text-white"> <button onclick="Opneva('suporte')" class="btn btn-outline-light"> <img class="img-fluid rounded-circle" src="img/botmini.png"> &nbsp Atendimento Virtual </button> </div>-->
+            </div>
+        </div>
+    </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"baca12e1c3cd40025a2c9eb799c52ffe83688771976f0f1a5db50923bd33a2705d5fe629768af6d9a03793700d9418c2", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
 </body>
 
-</html> -->
+</html>
