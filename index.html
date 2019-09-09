@@ -21,52 +21,63 @@
     <meta name="robots" content="noodp">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/custom.min.css">
-
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png">
 
 
 
     <title>Sistema para Emissão de Nota Fiscal Eletrônica (Nf-e / Nfc-e)</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147423173-1"></script>
     <script>
-        if (navigator.userAgent.indexOf("Speed Insights") == -1) {
-            var script = document.createElement('script');
-            script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-109130604-1');
-            script.setAttribute('type', 'text/javascript');
-            document.getElementsByTagName('head')[0].appendChild(script);
-            window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'UA-109130604-1');
-        }
+    gtag('config', 'UA-147423173-1');
+    
     </script>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="/"> <img class="img-fluid" src="img/logo.png" alt="Logo - Isco Sistemas" title="Logo da Isco Sistemas"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <p class="nav-link h4 font-weight-light text-dark"> 
-                          <a href="http://iscosistemas.com/chat.html"> Suporte </a>
-                        </p>
-                    </li>
-                </ul> <span class="navbar-text h4 font-weisght-light text-dark "> </span> </div>
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container">
+                <a class="navbar-brand" href="/"> <img class="img-fluid" src="img/logo.png" alt="Logo - Isco Sistemas" title="Logo da Isco Sistemas"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <p class="nav-link h5 font-weight-light text-dark"> 
+                            <a href="mailto:suporte@iscosistemas.com" target="_blank"> suporte@iscosistemas.com </a>
+                            <br>
+                            <a class="text-success" onclick="OpenWhats()" href="#">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- <span class="navbar-text h4 font-weight-light text-dark "> asfasdfasdfsd </span> -->
+                    </div>
+            </div>
         </nav>
-    </div>
-    <header class="masthead text-white">
-        <div class="overlay"></div>
+    <header class="masthead text-blue mb-0">
+        <!-- <div class="overlay"></div> -->
         <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h1 class="font-weight-bold ">Sistema para Nota Fiscal Eletrônica </h1> </div>
-                <div class="col-12 mt-3">
-                    <p class="h3 font-weight-light text">Conheça uma forma <b>simples e rápida</b> para emitir suas notas fiscais. </p>
+            <div class="row text-left">
+                <div class="col-10">
+                    <div class="col-12">
+                        <h1 class="font-weight-light ">Sistema de <b>Nf-e/Nfc-e</b> ideal para você </h1> 
+                    </div>
+                    <div class="col-12 mt-0">
+                        <p class="h3 font-weight-light text">Uma forma <b>simples e rápida</b> para emitir suas notas fiscais. </p>
+                    </div>
+                    <div class="col-8 mt-4">
+                        <p class="h5 font-weight-light text">O SmartUp ajuda as empresas a emitirem de forma rápida e simples suas notas fiscais.</p>
+                    </div>
+                
                 </div>
             </div>
         </div>
@@ -113,8 +124,8 @@
                 </div>
             </div>
     </section>
-    <section class="features-quote bg-light text-center text-dark mt-5 mb-4 ">
-        <p class="h1 font-weight-bold">Apartir de R$ 69,90/Mês!</p>
+    <section class="features-quote bg-light text-center text-dark mt-3 ">
+        <p class="h1 font-weight-bold">Apartir de R$ 80,00/Mês!</p>
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 text-right">
@@ -126,69 +137,45 @@
                 </div>
                 <div class="col-md-6 text-left">
                     <dl> <dt class="text-dark">Envio de Email para seu clientes </dt>
-                        <dd class="font-weight-light">O sistema envia automaticamente o XML e PDF para seu cliente.</dd> <dt class="text-dark">Economize Tempo e Dinheiro</dt>
-                        <dd class="font-weight-light">Envio do lote de NF para seu contador.</dd> <dt class="text-dark">Multi Empresas</dt>
+                        <dd class="font-weight-light">Envio automático do XML e PDF para seu cliente.</dd> <dt class="text-dark">Economize Tempo</dt>
+                        <dd class="font-weight-light">Envio do lote de XML para para seu contador.</dd> <dt class="text-dark">Multi Empresas</dt>
                         <dd class="font-weight-light">Em nosso sistema você pode cadastrar vários CNPJ para emitir suas notas fiscais, dentro da mesma plataforma. </dd>
                     </dl>
                 </div>
             </div>
         </div>
-        <div class="container mt-4">
-            <div class="row text-center">
-                <div class="col-md-6 offset-md-3">
-                    <div class="card">
-                        
-                </div>
-            </div>
     </section>
-    <!-- <section class="mb-4">
-        <div class="container">
-            <div class="row text-center" style="padding-top:1em;">
-                <div class="col-md-6 my-3">
-                    <div class="card shadown">
-                        <div class="card-body">
-                            <h5 class="card-title">Pronto para sua empresa!</h5>
-                            <hr>
-                            <p class="card-text lead text-justify"> <b class="text-info">Software e infraestrutura pronta para ser usada,</b> fácil contratação, sem burocracias contratação mensal ou anual, <b>suporte gratuito, qualidade e desempenho.</b> Basta você virar a chave e sair trabalhando.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 my-3">
-                    <div class="card shadown">
-                        <div class="card-body">
-                            <h5 class="card-title">Atendimento</h5>
-                            <hr>
-                            <p class="card-text lead text-justify"> Nosso atendimento é focado em <b class="text-info">ajudar você a resolver seu problema!</b> Damos 100% de suporte, do começo ao fim, seja na contratação, configuração ou uso do nosso sistema para emissão de suas notas fiscais. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <footer class="footer bg-dark">
+    <footer class="footer bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
-                    <p class="font-weight-light mb-4 mb-lg-0">&copy; http://iscosistemas.com</p>
+                <div class="col-lg-8  text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">&copy; 
+                      <a target="_blank" href="https://iscosistemas.com/Downloads/App.rar">Última Versão do App<a>
+                    </p>
                 </div>
-                <div class="col-lg-4 text-white ">
-                    <p class="h4 font-weight-light text-white"> </p>
+                   <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">
+                      
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 h-100 text-center text-lg-left my-auto text-white">
-                    <p class="font-weight-light mb-4 mb-lg-0">suporte@iscosistemas.com</p>
+                    <p class="font-weight-light mb-4 mb-lg-0">
+                     <a href="mailto:suporte@iscosistemas.com" target="_blank"> suporte@iscosistemas.com </a>
+                    </p>
                 </div>
-                <div class="col-lg-4 text-white ">
-                    <p class="h4 font-weight-light text-white"><a target="_blank" href="https://get.teamviewer.com/iscosistemas">Clique para baixar o Teamview</a></p>
+                <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white">
+                    <p class="font-weight-light mb-4 mb-lg-0">
+                      <a target="_blank" href="https://get.teamviewer.com/iscosistemas">Baixar o Teamview<a>
+                    </p>
                 </div>
-                <!-- <div class="col-lg-4 text-white"> <button onclick="Opneva('suporte')" class="btn btn-outline-light"> <img class="img-fluid rounded-circle" src="img/botmini.png"> &nbsp Atendimento Virtual </button> </div>-->
             </div>
         </div>
     </footer>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/mais.min.js"></script>
+    <script src="js/mais.js"></script>
 
 </body>
 
